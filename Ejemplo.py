@@ -1,0 +1,9 @@
+a=4
+b=2
+print(type(a))
+division=a/b
+print(division)
+print(type(a/b))
+print(a**b)
+print(divmod(22,4))
+print(bin(10))
