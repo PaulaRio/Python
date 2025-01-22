@@ -15,4 +15,3 @@ año = int(input("Ingresa el año: "))
 
 resultado = dia_de_la_semana(dia, mes, año)
 print(f"El {dia}/{mes}/{año} cayó en un {resultado}.")
-28
