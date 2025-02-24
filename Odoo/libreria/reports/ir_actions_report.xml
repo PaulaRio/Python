@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="action_report_libro" model="ir.actions.report">
+        <field name="name">Informe de Libro</field>
+        <field name="model">libreria.libro</field>
+        <field name="report_type">qweb-html</field>
+        <field name="report_name">libreria.report_libro_view</field>
+        <field name="report_file">libreria.report.report_libro</field>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

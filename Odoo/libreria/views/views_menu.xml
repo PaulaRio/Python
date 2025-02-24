@@ -1,0 +1,8 @@
+<odoo>
+<data>
+<menuitem name="Libreria" id="libreria.menu_root" groups="libreria_manager" action="libreria.libro_action_window"/> 
+<menuitem name="Categorias" id="libreria.categoria_menu" groups="libreria_manager" parent="libreria.menu_root" action="libreria.categoria_action_window"/> 
+<!--Referencia al ID--> 
+<menuitem name="Libros" id="libreria.libro_menu" parent="libreria.menu_root" groups="libreria_manager" action="libreria.libro_action_window"/> <!--Referencia al ID-->   
+</data> 
+</odoo>

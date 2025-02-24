@@ -15,7 +15,8 @@ class Carta:
     @property
     def valor(self):
         return Carta.valores[self.__valor]
-    
+    def __str__(self):
+        return f"{self.__valor}{self.__palo}"
     @palo.setter
     def palo(self,palo):
          if palo not in Carta.palos:
@@ -30,14 +31,6 @@ class Carta:
     
     def __str__(self):
         return ' Carta: valor '+self.__valor + ' y palo ' + self.__palo
-    def __eq__(self, other): # equals
-         return Carta.valores.index(self._valor) == Carta.valores.index(other.valor)
-    
-    def __lt__(self, other): # Less than (Menor que)
-        return Carta.valores.index(self._valor) < Carta.valores.index(other.valor)
-
-    def __gt__(self, other): # Greater than (Mayor que)
-        return Carta.valores.index(self._valor) > Carta.valores.index(other.valor)
 
 
 

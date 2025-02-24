@@ -1,4 +1,4 @@
 import calculadora
 
-calculadora.rest
+calculadora.resta(8,5)
 

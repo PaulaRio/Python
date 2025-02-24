@@ -1,0 +1,57 @@
+<odoo> 
+  <data> 
+<!--VISTAS MODELO LIBRO --> 
+ 	<record model="ir.ui.view" id="libreria.libro_tree"> 
+      <field name="name">libreria.libro.tree</field> 
+      <field name="model">libreria.libro</field> 
+      <field name="arch" type="xml"> 
+        <tree> 
+          <field name="name"/> 
+          <field name="precio"/> 
+ 	 	<field name="ejemplares"/> 
+        </tree> 
+      </field> 
+    </record> 
+ 	 
+ 	<record model="ir.ui.view" id="libreria.libro_form"> 
+      <field name="name">libreria.libro.form</field> 
+      <field name="model">libreria.libro</field> 
+      <field name="arch" type="xml"> 
+        <form> 
+ 	 	  <group colspan="2" col="2"> 
+ 	 	    <field name="name"/> 
+            <field name="precio"/> 
+ 	 	    <field name="ejemplares"/> 
+ 	 	 	<field name="fecha"/> 
+ 	 	    <field name="segmano"/> 
+ 	 	 	<field name="estado"/> 
+			<field name="categoria"/> 
+			<field name="importeTotal"/> 
+ 	 	  </group>   
+        </form> 
+      </field> 
+    </record> 
+	
+<record model="ir.ui.view" id="libreria.libro_search_view"> 
+      <field name="name">libreria.libro.search</field> 
+      <field name="model">libreria.libro</field> 
+      <field name="arch" type="xml"> 
+        <search> 
+ 	 	  <field name="name" string="Titulo"/> 
+ 	 	  <field name="categoria" string="Categoria"/>   
+ 	 	  <filter name="baratos" domain="[('precio','&lt;=',5)]"/> 
+        </search> 
+      </field> 
+</record> 
+
+ 
+<!--ACCIONES DE VENTANA --> 
+ 	<record model="ir.actions.act_window" id="libreria.libro_action_window"> 
+      <field name="name">libreria.libro.action_window</field> 
+      <field name="res_model">libreria.libro</field> <!--Campo _name--> 
+ 
+      <field name="view_mode">tree,form</field> 
+    </record> 
+</data>
+</odoo> 
+

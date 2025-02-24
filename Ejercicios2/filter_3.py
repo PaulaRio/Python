@@ -8,4 +8,4 @@ def divisores(n):
     return resultado
 
 lista=[1,2,3,6,7,11]
-print(list(filter(lambda x:len(divisores(x))==2 and x,lista)))
+print(list(filter(lambda x:len(divisores(x))==2,lista)))

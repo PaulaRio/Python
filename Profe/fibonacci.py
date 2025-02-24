@@ -11,6 +11,6 @@ def fibonacci(n):
 
 
 '''Principal: genero los primeros 15 números, por ejemplo'''
-f = fibonacci(15)
-for i in f:
-    print(i)
+'''f = fibonacci(15)
+for i in f:'''
+print(fibonacci(15))

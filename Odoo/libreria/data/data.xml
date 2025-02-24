@@ -1,0 +1,34 @@
+<odoo>
+    <data>
+        <!-- Categorías precargadas -->
+        <record model="libreria.categoria" id="categoria_novela">
+            <field name="name">Novela</field>
+            <field name="descripcion">Libros de ficción narrativa</field>
+        </record>
+        <record model="libreria.categoria" id="categoria_ensayo">
+            <field name="name">Ensayo</field>
+            <field name="descripcion">Libros de análisis y reflexión</field>
+        </record>
+
+        <!-- Libros precargados -->
+        <record model="libreria.libro" id="libro_alegria">
+            <field name="name">Alegría</field>
+            <field name="categoria" ref="categoria_ensayo"/>
+            <field name="ejemplares">10</field>
+            <field name="precio">7.00</field>
+            <field name="fecha">2025-01-11</field>
+            <field name="segmano">False</field>
+            <field name="estado">0</field>
+        </record>
+
+        <record model="libreria.libro" id="libro_tristeza">
+            <field name="name">Tristeza</field>
+            <field name="categoria" ref="categoria_novela"/>
+            <field name="ejemplares">5</field>
+            <field name="precio">12.50</field>
+            <field name="fecha">2024-12-25</field>
+            <field name="segmano">True</field>
+            <field name="estado">1</field>
+        </record>
+    </data>
+</odoo>
